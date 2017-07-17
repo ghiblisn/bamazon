@@ -64,7 +64,7 @@ function buyPrompt() {
 
 function buyUpdate(id, unitLeft, unitBuy, price){
     connection.query(
-    "INSERT INTO products2 SET ?",
+    "INSERT INTO products SET ?",
       [
         {
           stock_quantity: unitLeft

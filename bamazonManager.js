@@ -14,9 +14,8 @@ var connection = mysql.createConnection({
 connection.connect(function(err){
   if(err) throw err;
   console.log("connection as id " + connection.threadId);
+  managerPrompt();
 });
-
-managerPrompt();
 
 function managerPrompt() {
   inquirer.prompt([
